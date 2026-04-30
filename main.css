@@ -1,3 +1,9 @@
+:root {
+    --lime: #D6F49D;
+    --coffee: #230C0F;
+    --bronze: #CBA328;
+}
+
 body {
     background-color: #fffaf0;
     font-family: 'Merriweather' serif;
@@ -8,14 +14,30 @@ body {
 .navbar {
     background-color: #f5eadd;
     border-botoom: 1.5px solid #3e2723;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
-.navbar-brand, .nav-link {
+.navbar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand {
     color: #3e2723;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--coffee);
 }
 
 .dropdown-menu {
@@ -32,12 +54,12 @@ body {
     border: 1px solid #f8bb0;
 }
 
-/*-- curl type selction --*/
+/*-- curl type selction cards (bootstrap requirements)--*/
 .curl-card {
     border: 2px solid #f8bbd0;
-    border-radius: 12px;
-    background-color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0;
+    background-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
 }
 
 /* for the hover part */

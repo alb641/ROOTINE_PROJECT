@@ -90,9 +90,8 @@ body {
     bottom: 0;
     width: 100%;
     background-color: var(--lime);
-    border-top: 1.5px solid var(--coffee); 
+    border-top: 1.5px solid #230C0F; 
     padding: 20px 0;
-    z-index: 1000;
     text-align: center;
 }
 

@@ -7,12 +7,15 @@ body {
 
 .navbar {
     background-color: #f5eadd;
-    border-botoom: 2px solid #3e2723;
+    border-botoom: 1.5px solid #3e2723;
+    padding: 1.5rem 0;
 }
 
 .navbar-brand, .nav-link {
     color: #3e2723;
     font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .dropdown-menu {
@@ -64,12 +67,20 @@ body {
     padding: 15px 0;
 }
 
-.footer-link {
-    color: #3e2723;
-    text-decoration: none;
-    margin: 0 10px;
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--lime);
+    border-top: 1.5px solid var(--coffee); /* The specific border requested */
+    padding: 20px 0;
+    z-index: 1000;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
+.footer-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--coffee);
 }

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #D6F49D; color: #230C0F; }
+        .form-control:focus { border-color: #CBA328; box-shadow: 0 0 0 0.25rem rgba(203, 163, 40, 0.25); }
+        .btn-bronze { background-color: #CBA328; color: white; border: none; font-weight: bold; }
+        .btn-bronze:hover { background-color: #b08d22; color: white; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html" style="color: #230C0F !important;">The Rootine System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rootineNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="rootineNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair Types</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="type-2.html">Type 2 (Wavy)</a></li>
+                        <li><a class="dropdown-item" href="type-3.html">Type 3 (Curly)</a></li>
+                        <li><a class="dropdown-item" href="type-4.html">Type 4 (Coily)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-4">
+            <h1 class="display-5 fw-bold">Reach Out</h1>
+            <p>Have questions about your diagnosis? Email us at <br><strong>therootinesystem@gmail.com</strong></p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 bg-white p-5 rounded shadow-sm">
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label fw-bold">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label fw-bold">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="emailAddr" class="form-label fw-bold">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddr" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label fw-bold">Hair Type (if known)</label>
+                    <select class="form-select" id="subject">
+                        <option selected>Choose...</option>
+                        <option value="2">Type 2 (Wavy)</option>
+                        <option value="3">Type 3 (Curly)</option>
+                        <option value="4">Type 4 (Coily)</option>
+                        <option value="0">Unsure / Need Diagnosis</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label fw-bold">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-bronze px-5 py-2">Submit Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <span class="small">
+            &copy; 2026 Aliyah L. Brown | IS117 | Rootine Project <br>
+            <a href="#" class="text-decoration-none text-dark mx-2">Terms of Use</a> | 
+            <a href="#" class="text-decoration-none text-dark mx-2">Privacy Policy</a>
+        </span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

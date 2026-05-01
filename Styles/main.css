@@ -1,0 +1,110 @@
+:root {
+    --lime:   #D6F49D;  /* Main Background */
+    --coffee: #230C0F;  /* Primary Text & Borders */
+    --bronze: #CBA328;  /* Action Color */
+}
+
+body {
+    background-color: var(--lime); 
+    font-family: 'Playfair Display', serif; 
+    color: var(--coffee);
+    margin: 0;
+    padding-bottom: 120px; 
+}
+
+/* ── CENTERED NAVIGATION ── */
+.navbar {
+    background-color: transparent;
+    border-bottom: 1.5px solid var(--coffee);
+    padding: 2rem 0;
+}
+.highlight {
+    background-color: var(--bronze);
+    color: white; 
+    padding: 0 8px;
+    display: inline-block;
+}
+.navbar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: #230C0F;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--coffee);
+    padding: 0 15px; 
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid var(--coffee);
+}
+
+/* ── HOME HERO ── */
+.home-hero {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ── BOOTSTRAP CARDS ── */
+.curl-card {
+    border: 1.5px solid var(--coffee);
+    border-radius: 0;
+    background-color: transparent;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    cursor: pointer;
+}
+
+.curl-card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-10px);
+}
+
+.curl-card img {
+    filter: grayscale(30%);
+    transition: 0.4s;
+}
+
+.curl-card:hover img {
+    filter: grayscale(0%);
+}
+
+/* ── STICKY FOOTER ── */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--lime);
+    border-top: 1.5px solid #230C0F; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--coffee);
+    margin: 0;
+}

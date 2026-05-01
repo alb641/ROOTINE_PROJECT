@@ -94,11 +94,6 @@ body {
     background-color: #FFFFFF; 
 }
 
-.hair-page .footer {
-    border-top: 5px solid #CBA328; 
-    padding-top: 20px;
-}
-
 /* ── STICKY FOOTER ── */
 .footer {
     position: fixed;

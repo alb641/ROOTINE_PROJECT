@@ -89,6 +89,11 @@ body {
     filter: grayscale(0%);
 }
 
+/*-- Hair Type Pages --*/
+.hair-page {
+    background-color: #FFFFFF; 
+}
+
 /* ── STICKY FOOTER ── */
 .footer {
     position: fixed;
